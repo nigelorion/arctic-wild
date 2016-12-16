@@ -3,4 +3,68 @@
   padding: 0;
   box-sizing: border-box; }
 
+.header {
+  padding: 10px;
+  display: flex;
+  flex-direction: column; }
+  .header__top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px; }
+    .header__top__logo {
+      text-align: center;
+      flex: 1; }
+    .header__top__nav {
+      flex: 2;
+      flex-basis: 50px;
+      display: flex;
+      list-style: none;
+      justify-content: space-around; }
+  .header__logo {
+    margin-top: 30%;
+    height: 280px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between; }
+    .header__logo--large {
+      font-size: 4.4em; }
+    .header__logo__border {
+      height: 5px;
+      width: 22%;
+      background-color: white;
+      margin: 20px; }
+  .header__playbtn {
+    margin: 20px;
+    height: 110px;
+    width: 110px;
+    border-radius: 100%;
+    background-color: rgba(255, 255, 255, 0.7);
+    align-self: center;
+    text-align: center;
+    margin: 20px; }
+    .header__playbtn img {
+      width: 38%;
+      margin-left: 10%;
+      margin-top: 26%; }
+
+.header {
+  background-image: url(../img/hero-1.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  transition: all ease-in-out 250ms; }
+
+.header__top__nav li:hover {
+  color: #fba600; }
+
+.header__playbtn:hover {
+  width: 150px;
+  height: 150px; }
+
+.header {
+  color: white; }
+
 /*# sourceMappingURL=app.css.map */
