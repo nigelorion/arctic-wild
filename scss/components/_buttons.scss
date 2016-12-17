@@ -2,8 +2,13 @@
   color: rgb(251, 166, 0);
 }
 
-
 .header__playbtn:hover {
   width: 150px;
   height: 150px;
+}
+
+.gallery__cards__item__hover:hover{
+  width: 120px;
+  height: 120px;
+  background-color: rgba(179, 179, 179, 0.35);
 }

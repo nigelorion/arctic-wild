@@ -3,6 +3,9 @@
   padding: 0;
   box-sizing: border-box; }
 
+body {
+  min-width: 400px; }
+
 .header {
   padding: 10px;
   display: flex;
@@ -11,43 +14,235 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100px; }
+    height: 100px;
+    padding: 15px; }
     .header__top__logo {
-      text-align: center;
       flex: 1; }
     .header__top__nav {
       flex: 2;
       flex-basis: 50px;
       display: flex;
       list-style: none;
-      justify-content: space-around; }
+      justify-content: space-around;
+      transition: all 200ms ease-in-out; }
+      .header__top__nav li {
+        transition: all 160ms ease-in-out;
+        cursor: pointer; }
+      @media (max-width: 950px) {
+        .header__top__nav {
+          display: none; } }
   .header__logo {
-    margin-top: 30%;
+    margin-top: 10%;
     height: 280px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between; }
+    @media (max-width: 525px) {
+      .header__logo {
+        font-size: .8em; } }
     .header__logo--large {
       font-size: 4.4em; }
+      @media (max-width: 950px) {
+        .header__logo--large {
+          font-size: 3em; } }
+      @media (max-width: 520px) {
+        .header__logo--large {
+          font-size: 2em; } }
     .header__logo__border {
       height: 5px;
       width: 22%;
       background-color: white;
       margin: 20px; }
   .header__playbtn {
-    margin: 20px;
     height: 110px;
     width: 110px;
     border-radius: 100%;
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(255, 255, 255, 0.5);
     align-self: center;
     text-align: center;
-    margin: 20px; }
-    .header__playbtn img {
+    margin: 20px;
+    transition: all 120ms ease-in; }
+    .header__playbtn__img {
       width: 38%;
       margin-left: 10%;
       margin-top: 26%; }
+
+.gallery {
+  font-family: 'Lato', sans-serif; }
+  .gallery__nav {
+    background-color: #4b4b4b;
+    height: 80px;
+    display: flex;
+    list-style: none;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center; }
+    @media (max-width: 950px) {
+      .gallery__nav {
+        display: none; }
+        .gallery__nav :before {
+          content: '(x2261)'; } }
+    .gallery__nav :before {
+      content: '(x2261)'; }
+  .gallery__cards {
+    display: flex;
+    flex-wrap: wrap; }
+    .gallery__cards__item:nth-of-type(1) {
+      background-image: url("../img/raft.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      height: 400px;
+      flex: 1;
+      flex-basis: 25%;
+      display: flex;
+      position: relative;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      transition: all 200ms ease-in-out; }
+      @media (max-width: 950px) {
+        .gallery__cards__item:nth-of-type(1) {
+          flex-basis: 50%;
+          padding: 5; } }
+      @media (max-width: 700px) {
+        .gallery__cards__item:nth-of-type(1) {
+          flex-basis: 100%;
+          margin: 5%; } }
+    .gallery__cards__item:nth-of-type(2) {
+      background-image: url("../img/tent.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      height: 400px;
+      flex: 1;
+      flex-basis: 25%;
+      display: flex;
+      position: relative;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      transition: all 200ms ease-in-out; }
+      @media (max-width: 950px) {
+        .gallery__cards__item:nth-of-type(2) {
+          flex-basis: 50%;
+          padding: 5; } }
+      @media (max-width: 700px) {
+        .gallery__cards__item:nth-of-type(2) {
+          flex-basis: 100%;
+          margin: 5%; } }
+    .gallery__cards__item:nth-of-type(3) {
+      background-image: url("../img/backpacking.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      height: 400px;
+      flex: 1;
+      flex-basis: 25%;
+      display: flex;
+      position: relative;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      transition: all 200ms ease-in-out; }
+      @media (max-width: 950px) {
+        .gallery__cards__item:nth-of-type(3) {
+          flex-basis: 50%;
+          padding: 5; } }
+      @media (max-width: 700px) {
+        .gallery__cards__item:nth-of-type(3) {
+          flex-basis: 100%;
+          margin: 5%; } }
+    .gallery__cards__item:nth-of-type(4) {
+      background-image: url("../img/canoe.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      height: 400px;
+      flex: 1;
+      flex-basis: 25%;
+      display: flex;
+      position: relative;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      transition: all 200ms ease-in-out; }
+      @media (max-width: 950px) {
+        .gallery__cards__item:nth-of-type(4) {
+          flex-basis: 50%;
+          padding: 5; } }
+      @media (max-width: 700px) {
+        .gallery__cards__item:nth-of-type(4) {
+          flex-basis: 100%;
+          margin: 5%; } }
+    .gallery__cards__item:nth-of-type(5) {
+      background-image: url("../img/river.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      height: 400px;
+      flex: 1;
+      flex-basis: 25%;
+      display: flex;
+      position: relative;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      transition: all 200ms ease-in-out; }
+      @media (max-width: 950px) {
+        .gallery__cards__item:nth-of-type(5) {
+          flex-basis: 50%;
+          padding: 5; } }
+      @media (max-width: 700px) {
+        .gallery__cards__item:nth-of-type(5) {
+          flex-basis: 100%;
+          margin: 5%; } }
+    .gallery__cards__item:nth-of-type(6) {
+      background-image: url("../img/home.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      height: 400px;
+      flex: 1;
+      flex-basis: 25%;
+      display: flex;
+      position: relative;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      transition: all 200ms ease-in-out; }
+      @media (max-width: 950px) {
+        .gallery__cards__item:nth-of-type(6) {
+          flex-basis: 50%;
+          padding: 5; } }
+      @media (max-width: 700px) {
+        .gallery__cards__item:nth-of-type(6) {
+          flex-basis: 100%;
+          margin: 5%; } }
+    .gallery__cards__item:nth-of-type(1) {
+      flex-basis: 50%; }
+      @media (max-width: 950px) {
+        .gallery__cards__item:nth-of-type(1) {
+          flex-basis: 100%; } }
+    .gallery__cards__item:nth-of-type(6) {
+      flex-basis: 50%; }
+      @media (max-width: 950px) {
+        .gallery__cards__item:nth-of-type(6) {
+          flex-basis: 100%; } }
+    .gallery__cards__item__hover {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      background-color: rgba(57, 57, 57, 0.63);
+      transition: all 150ms ease-in-out;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); }
+    .gallery__cards h2 {
+      margin: 10px;
+      bottom: 0; }
 
 .header {
   background-image: url(../img/hero-1.jpg);
@@ -64,7 +259,15 @@
   width: 150px;
   height: 150px; }
 
+.gallery__cards__item__hover:hover {
+  width: 120px;
+  height: 120px;
+  background-color: rgba(179, 179, 179, 0.35); }
+
 .header {
+  color: white; }
+
+.gallery {
   color: white; }
 
 /*# sourceMappingURL=app.css.map */
