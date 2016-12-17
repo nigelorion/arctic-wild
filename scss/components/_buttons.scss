@@ -11,4 +11,12 @@
   width: 120px;
   height: 120px;
   background-color: rgba(179, 179, 179, 0.35);
+  cursor: pointer;
+}
+
+.gallery__nav {
+  li:hover {
+    cursor: pointer;
+    color: rgb(251, 166, 0);
+  }
 }
